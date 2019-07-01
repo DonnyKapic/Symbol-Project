@@ -6,7 +6,12 @@ void printStack(stack<char>);
 
 int main(){
 	stack<char> mystack;
-	string test = "([{}])";		//Will add user input feature in future update
+
+	string test;
+	cout << "Please enter a test string.\n";
+	cin >> test;
+
+	//Will add user input feature in future update
 	cout << "The test string is: " << test << endl;
 
 	//If odd, invalid
