@@ -19,29 +19,23 @@ int main(){
 		return 0;
 	}
 
-	int equality = 0;
-
 	//iterate through string
 	for(auto it = test.begin(); it != test.end(); it++)
 		if(*it == '(' || *it == '[' || *it == '{'){	//open symbols
-			equality++;
 			mystack.push(*it);
 			printStack(mystack);
 		}
 		else if(*it == ')' || *it == ']' || *it == '}'){	//closed symbols
 			switch(*it){					//check for matching open symbol
 				case ')': if(mystack.top() == '('){
-						equality--;
 						mystack.pop();
 					  };
 					  break;
 				case ']': if(mystack.top() == '['){
-					  	equality--;
 						mystack.pop();
 					  };
 					  break;
 				case '}': if(mystack.top() == '{'){
-						equality--;
 						mystack.pop();
 					  };
 					  break;
