@@ -53,7 +53,7 @@ int main(){
 			return 0;
 		}
 		
-	if(equality == 0)
+	if(mystack.empty())
 		cout << "SUCCESS. This input is legal.\n";
 	else
 		cout << "This input is ILLEGAL.\n";
